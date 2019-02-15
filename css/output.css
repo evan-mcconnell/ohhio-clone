@@ -67,6 +67,7 @@ header .login .lnr {
 }
 
 .banner1 {
+  display: none;
   margin-bottom: -110px;
   text-align: center;
 }
@@ -160,6 +161,46 @@ header .login .lnr {
   position: relative;
   bottom: 100px;
   color: red;
+}
+
+.products {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 55px;
+  height: 335px;
+}
+.products > p {
+  font-size: 12px;
+  font-weight: 800;
+  margin: 40px 0;
+}
+.products .product-display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 0 50px;
+}
+.products .product {
+  width: 250px;
+  height: 315px;
+  margin: 0 10px;
+}
+.products .product img {
+  width: 100%;
+  height: auto;
+}
+.products .product h2 {
+  font-size: 11px;
+  font-weight: bold;
+  margin: 10px;
+}
+.products .product p {
+  font-size: 11px;
+}
+.products .product p .fancy {
+  font-style: italic;
 }
 
 /*# sourceMappingURL=output.css.map */

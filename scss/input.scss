@@ -54,6 +54,7 @@ header {
 } //end of header
 
 .banner1 {
+  display: none;
   margin-bottom: -110px;
   text-align: center;
   img {
@@ -141,6 +142,44 @@ header {
       position: relative;
       bottom: 100px;
       color: red;
+    }
+  }
+} //end of banner2
+
+.products {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 55px;
+  height: 335px;
+  > p {
+    font-size: 12px;
+    font-weight: 800;
+    margin: 40px 0;
+  }
+  .product-display  {
+    @include flex-row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 0 50px;
+  }
+  .product {
+    width: 250px;
+    height: 315px;
+    margin: 0 10px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    h2 {
+      font-size: 11px;
+      font-weight: bold;
+      margin: 10px;
+    }
+    p {
+      font-size: 11px;
+      .fancy {
+        font-style: italic;
+      }
     }
   }
 }
