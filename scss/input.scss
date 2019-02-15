@@ -54,7 +54,7 @@ header {
 } //end of header
 
 .banner1 {
-  display: none;
+  // display: none;
   margin-bottom: -110px;
   text-align: center;
   img {
@@ -140,7 +140,7 @@ header {
     }
     p {
       position: relative;
-      bottom: 100px;
+      bottom: 10vw;
       color: red;
     }
   }
@@ -150,7 +150,8 @@ header {
   text-align: center;
   text-transform: uppercase;
   margin: 55px;
-  height: 335px;
+  height: 435px;
+  overflow: hidden;
   > p {
     font-size: 12px;
     font-weight: 800;
@@ -159,13 +160,14 @@ header {
   .product-display  {
     @include flex-row;
     flex-wrap: wrap;
-    overflow: hidden;
+    justify-content: center;
     margin: 0 50px;
   }
   .product {
     width: 250px;
     height: 315px;
     margin: 0 10px;
+    margin-bottom: 50px;
     img {
       width: 100%;
       height: auto;
@@ -182,7 +184,79 @@ header {
       }
     }
   }
+} //end of products
+
+.catagories {
+  @include flex-row;
+  background-color: #f2f2f2;
+  > p {
+    align-self: center;
+    font-size: 2.6vw;
+    font-weight: bold;
+    padding: 50px;
+    width: 30%;
+  }
+  .cat-container {
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 50px;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 30%;
+    margin: 0 8px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    p {
+      position: relative;
+      bottom: 13vw;
+      left: 10px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+} // end of projust catagoies
+
+.site-links {
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+  a {
+    padding: 40px 15px;
+  }
+  img {
+    width: 90px;
+    height: 45px;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
+
+
+footer {
+  background-color: #f2f2f2;
+  opacity: 0.6;
+  @include nav-text;
+  .footer-main {
+    @include flex-row;
+  }
+  .foot-links {
+    @include flex-row;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .subscribe {
+
+  }
+}
+
 
 
 
