@@ -1,0 +1,29 @@
+//mixins
+
+@mixin nav-text {
+  text-transform: uppercase;
+  text-decoration: none;
+  font: {
+    // family: ;
+  }
+  transition: {
+    property: color;
+    duration: 0.3s;
+    timing-function: ease;
+    delay: 0s;
+  }
+}
+
+
+@mixin mQ($screen-size...){
+  @if length($screen-size) == 1 {
+    @media screen and (max-width: nth($sceen-size, 1)) {
+      @content;
+    }
+  }
+  @if length($sceen-size) == 2 {
+    @media screen and (max-width: nth($screen-size,1)) and (min-width: nth($screen-size, 2)) {
+      @content;
+    }
+  }
+}
