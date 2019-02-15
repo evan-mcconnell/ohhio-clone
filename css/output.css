@@ -66,27 +66,28 @@ header .login .lnr {
   font-size: 13px;
 }
 
-.banner {
+.banner1 {
+  margin-bottom: -110px;
   text-align: center;
 }
-.banner img {
+.banner1 img {
   width: 100%;
 }
-.banner .banner-text {
+.banner1 .banner-text {
   position: relative;
   bottom: 44vw;
   text-transform: uppercase;
 }
-.banner h2 {
+.banner1 h2 {
   font-size: 3.5vw;
   font-weight: bolder;
 }
-.banner p {
+.banner1 p {
   font-size: 1.7vw;
   font-weight: bold;
   margin-top: 5px;
 }
-.banner button {
+.banner1 button {
   position: relative;
   bottom: 20vw;
   width: 230px;
@@ -96,6 +97,69 @@ header .login .lnr {
   font-weight: 800;
   background-color: white;
   border: none;
+}
+
+.design-burb {
+  text-align: center;
+  width: 50%;
+  margin: 0 25%;
+}
+.design-burb h1 {
+  font-size: 3.7vw;
+}
+.design-burb p {
+  font-size: 1.2vw;
+  line-height: 150%;
+  letter-spacing: 1px;
+  margin: 20px 0;
+}
+.design-burb .social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 200px;
+}
+.design-burb .social-media img {
+  height: 1.5vw;
+}
+
+.banner2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 540px;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+}
+.banner2 .red-dot {
+  color: white;
+  width: 45%;
+  height: 100%;
+  background-color: #dedfe3;
+}
+.banner2 .red-dot img {
+  height: 10vw;
+  margin: 100px 0;
+}
+.banner2 .red-dot h1 {
+  font-size: 3vw;
+}
+.banner2 .red-dot p {
+  font-size: 1.2vw;
+}
+.banner2 .learn-more {
+  width: 55%;
+}
+.banner2 .learn-more img {
+  height: auto;
+  width: 100%;
+}
+.banner2 .learn-more p {
+  position: relative;
+  bottom: 100px;
+  color: red;
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -51,9 +51,10 @@ header {
       font-size: 13px;
     }
   }
-}
+} //end of header
 
-.banner {
+.banner1 {
+  margin-bottom: -110px;
   text-align: center;
   img {
     width: 100%;
@@ -83,4 +84,70 @@ header {
     background-color: white;
     border: none;
   }
+} //end of banner1
+
+.design-burb {
+  text-align: center;
+  width: 50%;
+  margin: 0 25%;
+  h1 {
+    font-size: 3.7vw;
+  }
+  p {
+    font-size: 1.2vw;
+    line-height: 150%;
+    letter-spacing: 1px;
+    margin: 20px 0;
+  }
+  .social-media {
+    @include flex-row;
+    justify-content: space-around;
+    padding: 10px 200px;
+    img {
+      height: 1.5vw;
+    }
+  }
+} //end of deign-blurb
+
+.banner2 {
+  @include flex-row;
+  height: 540px;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  .red-dot {
+    color: white;
+    width: 45%;
+    height: 100%;
+    background-color: $back-grey;
+    img {
+      height: 10vw;
+      margin: 100px 0;
+    }
+    h1 {
+      font-size: 3vw;
+    }
+    p {
+      font-size: 1.2vw;
+    }
+  }
+  .learn-more {
+    width: 55%;
+    img {
+      height: auto;
+      width: 100%;
+    }
+    p {
+      position: relative;
+      bottom: 100px;
+      color: red;
+    }
+  }
 }
+
+
+
+
+
+
+//end
