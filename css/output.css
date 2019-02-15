@@ -13,17 +13,27 @@ header {
   flex-direction: row;
   align-items: center;
   height: 89px;
+  margin: 0 50px;
+}
+header .logo img {
+  width: 130px;
+  height: auto;
+  margin: 20px 20px 20px 0px;
 }
 header nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 header nav .links a {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+  font-size: 10px;
+  margin: 0 11px;
+  letter-spacing: 1.6px;
   transition-property: color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -32,14 +42,28 @@ header nav .links a {
 header nav .links a:hover {
   color: #838383;
 }
+header nav .links a:first-child {
+  font-weight: bold;
+}
 header .login a {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+  font-size: 10px;
+  margin: 0 11px;
+  letter-spacing: 1.6px;
   transition-property: color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
   transition-delay: 0s;
+  font-weight: 800;
+}
+header .login a:first-of-type {
+  font-weight: normal;
+}
+header .login .lnr {
+  font-weight: 800;
+  font-size: 13px;
 }
 
 .banner {
@@ -64,12 +88,14 @@ header .login a {
 }
 .banner button {
   position: relative;
-  bottom: 10vw;
-  min-width: 230px;
-  max-width: 230px;
+  bottom: 20vw;
+  width: 230px;
+  height: 56px;
   font-size: 26px;
   line-height: 26px;
   font-weight: 800;
+  background-color: white;
+  border: none;
 }
 
 /*# sourceMappingURL=output.css.map */

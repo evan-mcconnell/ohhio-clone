@@ -16,22 +16,40 @@ body {
 header {
   @include flex-row;
   height: 89px;
-  .logo {
+  margin: 0 50px;
+  .logo img {
+    width: 130px;
+    height: auto;
+    margin: 20px 20px 20px 0px;
   }
   nav {
     @include flex-row;
     justify-content: space-between;
+    width: 100%;
     .links a {
       @include nav-text;
       @include smooth-trans;
       &:hover {
         color: $grey;
       }
+      &:first-child {
+        font-weight: bold;
+      }
     }
   }
-  .login a {
-    @include nav-text;
-    @include smooth-trans;
+  .login {
+    a {
+      @include nav-text;
+      @include smooth-trans;
+      font-weight: 800;
+      &:first-of-type {
+        font-weight: normal;
+      }
+    }
+    .lnr {
+      font-weight: 800;
+      font-size: 13px;
+    }
   }
 }
 
@@ -56,11 +74,13 @@ header {
   }
   button {
     position: relative;
-    bottom: 10vw;
-    min-width: 230px;
-    max-width: 230px;
+    bottom: 20vw;
+    width: 230px;
+    height: 56px;
     font-size: 26px;
     line-height: 26px;
     font-weight: 800;
+    background-color: white;
+    border: none;
   }
 }

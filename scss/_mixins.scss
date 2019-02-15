@@ -12,6 +12,9 @@
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+  font-size: 10px;
+  margin: 0 11px;
+  letter-spacing: 1.6px;
 }
 
 @mixin smooth-trans {
