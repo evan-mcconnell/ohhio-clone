@@ -9,10 +9,58 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
 header {
+  @include flex-row;
+  height: 89px;
+  .logo {
+  }
   nav {
-    a {
+    @include flex-row;
+    justify-content: space-between;
+    .links a {
       @include nav-text;
+      @include smooth-trans;
+      &:hover {
+        color: $grey;
+      }
     }
+  }
+  .login a {
+    @include nav-text;
+    @include smooth-trans;
+  }
+}
+
+.banner {
+  text-align: center;
+  img {
+    width: 100%;
+  }
+  .banner-text {
+    position: relative;
+    bottom: 44vw;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 3.5vw;
+    font-weight: bolder;
+  }
+  p{
+    font-size: 1.7vw;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  button {
+    position: relative;
+    bottom: 10vw;
+    min-width: 230px;
+    max-width: 230px;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 800;
   }
 }

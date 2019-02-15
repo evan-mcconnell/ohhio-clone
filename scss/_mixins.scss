@@ -1,11 +1,20 @@
 //mixins
 
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
 @mixin nav-text {
   text-transform: uppercase;
   text-decoration: none;
-  font: {
-    // family: ;
-  }
+  color: black;
+}
+
+@mixin smooth-trans {
   transition: {
     property: color;
     duration: 0.3s;
@@ -13,7 +22,6 @@
     delay: 0s;
   }
 }
-
 
 @mixin mQ($screen-size...){
   @if length($screen-size) == 1 {
