@@ -17,6 +17,9 @@ header {
   @include flex-row;
   height: 89px;
   margin: 0 50px;
+  .menu {
+    display: none;
+  }
   .logo img {
     width: 130px;
     height: auto;
@@ -49,6 +52,9 @@ header {
     .lnr {
       font-weight: 800;
       font-size: 13px;
+    }
+    .icons {
+      display: none;
     }
   }
 } //end of header
@@ -150,7 +156,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   margin: 55px;
-  height: 435px;
+  height: 480px;
   overflow: hidden;
   > p {
     font-size: 12px;
@@ -167,18 +173,19 @@ header {
     width: 250px;
     height: 315px;
     margin: 0 10px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     img {
       width: 100%;
       height: auto;
     }
     h2 {
       font-size: 11px;
-      font-weight: bold;
-      margin: 10px;
+      font-weight: 500;
+      margin: 25px 10px 10px 10px;
     }
     p {
       font-size: 11px;
+      text-transform: lowercase;
       .fancy {
         font-style: italic;
       }
@@ -237,7 +244,7 @@ header {
       opacity: 1;
     }
   }
-}
+} //end of site-links
 
 
 footer {
@@ -255,10 +262,39 @@ footer {
   .subscribe {
 
   }
+} //end of footer
+
+
+//media queries
+
+@include mQ(992px) {
+  header {
+    @include flex-row;
+    justify-content: space-between;
+    width: 100%;
+    height: 125px;
+    .menu {
+      display: block;
+      font-size: 20px;
+    }
+    .logo img {
+      width: 250px;
+      height: auto;
+    }
+    nav {
+      width: 20%;
+      .links {
+        display: none;
+      }
+      .login > a {
+        display: none;
+      }
+      .icons {
+        display: block !important;
+      }
+    }
+  }
 }
-
-
-
 
 
 
