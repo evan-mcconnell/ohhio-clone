@@ -8,10 +8,22 @@
 
 _This styling project makes use of SASS for styling, including use of mixins, variables, and nested styles. Groups of similar items are organized using flexboxes. Responsive design is built into the styles using flexboxes and vw/vh prefixed when possible, and media queries are used to scale and reorganize in other cases (ie. in the header)._
 
-### Link to github
+### Screenshots of web pages
 
+![Original site](img/ohhio-site.png)
 
+![Original site](img/ohhio-site-clone.png)
 ***
+
+## Bugs/Issues
+
+_The top banner image on the original site is within a carousel of rotating banners. In the clone site, only one is displayed._
+
+_The both backgrounds in the red dot banner are images that I was not able to get from the original website. I faked the red dot background by adding a logo over a gray background, and for the other I chose a similar image from another place on the site._
+
+_The section of the original website directly above the footer was missing when I was originally viewing the page due to my own error in clicking around with their styles. I did not have time to add it after realizing._
+
+_The footer itself is incomplete._
 
 ## Technologies Used
 
