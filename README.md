@@ -8,10 +8,12 @@
 
 _This styling project makes use of SASS for styling, including use of mixins, variables, and nested styles. Groups of similar items are organized using flexboxes. Responsive design is built into the styles using flexboxes and vw/vh prefixed when possible, and media queries are used to scale and reorganize in other cases (ie. in the header)._
 
-### Screenshots of web pages
+## Screenshots of web pages
 
+#### Screenshots of original webpage
 ![Original site](img/ohhio-site.png)
 
+#### Screenshots of clone webpage
 ![Original site](img/ohhio-site-clone.png)
 ***
 
